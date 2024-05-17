@@ -1,6 +1,6 @@
 # 🐝 Beeboop 🐝
 
-*🐝 Analysons les abeilles 🐝*
+**🐝 Analysons les abeilles 🐝**
 
 PolliConnect est un projet conçu pour surveiller et compter le nombre de pollinisateurs, tels que les **abeilles🐝** et les **papillons🦋**, visitant une zone spécifique. À l'aide d'une caméra, le projet capture des séquences vidéo en temps réel et utilise des algorithmes d'apprentissage automatique pour détecter et compter les pollinisateurs. 
 
