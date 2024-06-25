@@ -22,7 +22,7 @@ counter = solutions.ObjectCounter(
 )
 
 # Calculer le pas pour obtenir 10 frames par seconde
-skip_frames = int(fps // 10)
+skip_frames = int(fps // 5)
 
 frame_count = 0
 
@@ -34,7 +34,7 @@ while cap.isOpened():
 
     # Traiter seulement une frame sur `skip_frames`
     if frame_count % skip_frames == 0:
-        tracks = model.track(im0, persist=True, show=False, conf=0.05)
+        tracks = model.track(im0, persist=True, show=False, conf=0.349)
         im0 = counter.start_counting(im0, tracks)
         video_writer.write(im0)
 

@@ -20,12 +20,17 @@ Faite git clone :
   git clone https://github.com/calvinNdmb/Beeboop.git
 ```
 
-Installer le fichier requirements
+Installer le fichier requirements:
 
 ```python
   pip install -r requirements.txt
 ```
+Sur un rasberri :
 
+```python
+pip3 install -r requirements.txt
+```
+Et regarder [lien utile](https://raspberrypi-guide.github.io/programming/install-opencv)
 
 ## 🧮 Pour lancer l'entrainement:
 
