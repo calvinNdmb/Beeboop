@@ -31,12 +31,11 @@ Installer le fichier requirements
 
 Le [Google colab](https://colab.research.google.com/drive/1hvyosE5pSRpjm5LHExdDigdmbghjksuc?usp=sharing) pour entraîner le model
 
+❓Comment régler l'erreur de position des fichiers[Youtube](https://youtu.be/LNwODJXcvt4?si=bTVhICUVB16pZbIP&t=159)
 
 ## 🌐 Liens Utiles
 
 📂 Création du Dataset [Documentation](https://universe.roboflow.com/mopi/beeboop-2)
-
-❓Comment régler l'erreur de position[Youtube](https://youtu.be/LNwODJXcvt4?si=bTVhICUVB16pZbIP&t=159)
 
 🐝 Dataset Kaggle [Documentation](https://www.kaggle.com/datasets/jerzydziewierz/bee-vs-wasp)
 
