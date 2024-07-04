@@ -1,1 +1,4 @@
 .conda/
+input_to_rotate/
+output_to_rotate/
+training_database/
