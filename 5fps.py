@@ -1,8 +1,8 @@
 import cv2
 from ultralytics import YOLO, solutions
 
-model = YOLO("lil_big_ai.pt")
-cap = cv2.VideoCapture("My Video.mp4")
+model = YOLO("models/lil_big_ai.pt")
+cap = cv2.VideoCapture("test_video_input/My Video.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 
