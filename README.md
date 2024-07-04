@@ -40,7 +40,7 @@ Le [Google colab](https://colab.research.google.com/drive/1hvyosE5pSRpjm5LHExdDi
 
 ## 🌐 Liens Utiles
 
-📂 Création du Dataset [Documentation](https://universe.roboflow.com/mopi/beeboop-2)
+📂 Création du Dataset [Documentation](https://universe.roboflow.com/mopi/beeboop)
 
 🐝 Dataset Kaggle [Documentation](https://www.kaggle.com/datasets/jerzydziewierz/bee-vs-wasp)
 
