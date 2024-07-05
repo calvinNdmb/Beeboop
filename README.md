@@ -38,7 +38,12 @@ Le [Google colab](https://colab.research.google.com/drive/1hvyosE5pSRpjm5LHExdDi
 
 ❓Comment régler l'erreur de position des fichiers[Youtube](https://youtu.be/LNwODJXcvt4?si=bTVhICUVB16pZbIP&t=159)
 
-## 🌐 Liens Utiles
+## 💡Petit tips :
+
+- Le meilleur model est "best_of_them.pt" il est basé sur l'architecture [yoloV8m](https://docs.ultralytics.com/models/yolov8/) (m pour medium) --> temps d'entrainement 2H
+- Le second meilleur est "lil_nano.pt" il est basé sur l'architecture [yoloV8n](https://docs.ultralytics.com/models/yolov8/) (n pour nano) --> temps d'entrainement :1H
+
+## 🌐 Liens Utiles:
 
 📂 Link to the dataset [Documentation](https://universe.roboflow.com/mopi/beeboop)
 
