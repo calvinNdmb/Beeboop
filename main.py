@@ -214,7 +214,7 @@ def convert_avi_to_mp4(input_file, output_file):
 if not os.path.exists('videos'):
     os.makedirs('videos')
 
-remote_directory = "Polliconnect1/Test"
+remote_directory = "Polliconnect1/ATraiter"
 all_files = list_files(remote_directory)
 for remote_file_path in all_files:
     local_file_path = f'videos/{os.path.basename(remote_file_path)}'
