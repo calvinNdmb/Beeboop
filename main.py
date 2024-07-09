@@ -8,10 +8,10 @@ ip_address = "51.159.106.237"
 username = "efrei1"
 password = "efrei2019"
 model = YOLO("models/lil_big_ai.pt")
-results = model("test_video_input/Untitled.mp4",save=True ,show=False, vid_stride=10, show_labels=False, conf=0.5)
+results = model("videos/4805810-hd_1280_720_30fps.mp4",save=True ,show=True, vid_stride=10, show_labels=False, conf=0.5)
 
 
-def is_new_box(new_box, existing_boxes, iou_threshold=0.1):
+def is_new_box(new_box, existing_boxes, iou_threshold=0.5):
     """
     Vérifie si la nouvelle boîte est suffisamment différente des boîtes existantes
     pour être considérée comme une nouvelle boîte.
@@ -123,18 +123,19 @@ for result in results:
         if is_new_box(box, unique_boxes_by_class[cls]):
             unique_boxes_by_class[cls].append(box)
 
-
+dictio = {'bee':0, 'butterfly':0, 'fly':0, 'hornet':0, 'wasp':0}
 classes = {0: 'bee', 1: 'butterfly', 2: 'fly', 3: 'hornet', 4: 'wasp'}
 for cls, boxes in unique_boxes_by_class.items():
-    print(f"Nombre total de la classe {classes[int(cls)]} détectés : {len(boxes)}")
-txt_output=f'bee ={classes[0]}\nhornet ={classes[3]}\nwasp ={classes[4]}\nfly ={classes[2]}\nbutterfly ={classes[1]}\n'
+    dictio = {classes[int(cls)]:len(boxes)} 
+    #print(f"Nombre total de la classe {classes[int(cls)]} détectés : {len(boxes)}")
+
+
+txt_output = f"bee = {dictio['bee']}\nhornet = {dictio['hornet']}\nwasp = {dictio['wasp']}\nfly = {dictio['fly']}\nbutterfly = {dictio['butterfly']}"
+
 #transfer_video_and_create_txt("runs/detect/predict/Untitled.mp4", txt_output)
 #folder_path = 'runs'
-
+print (txt_output)
 # Vérifie si le dossier existe
-if os.path.exists(folder_path) and os.path.isdir(folder_path):
+#if os.path.exists(folder_path) and os.path.isdir(folder_path):
     # Supprime le dossier et son contenu
-    shutil.rmtree(folder_path)
-    print(f"Le dossier '{folder_path}' a été supprimé avec succès.")
-else:
-    print(f"Le dossier '{folder_path}' n'existe pas.")
+    #shutil.rmtree(folder_path)
