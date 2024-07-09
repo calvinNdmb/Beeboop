@@ -241,9 +241,12 @@ for remote_file_path in all_files:
             dictio[classes[int(cls)]] = len(boxes)
 
         txt_output = f"bee = {dictio['bee']}\nhornet = {dictio['hornet']}\nwasp = {dictio['wasp']}\nfly = {dictio['fly']}\nbutterfly = {dictio['butterfly']}"
-        transfer_video_and_create_txt(f"runs/detect/predict/{os.path.splitext(os.path.basename(remote_file_path))[0]}.avi", txt_output)
+        input_file = f'runs/detect/predict/{os.path.splitext(os.path.basename(remote_file_path))[0]}.avi'
+        output_file = f'runs/detect/predict/{os.path.splitext(os.path.basename(remote_file_path))[0]}.mp4'
+        convert_avi_to_mp4(input_file, output_file)
+        transfer_video_and_create_txt(f"runs/detect/predict/{os.path.splitext(os.path.basename(remote_file_path))[0]}.mp4", txt_output)
         
-        print(txt_output)
+        #print(txt_output)
 
         if os.path.exists(local_file_path):
             os.remove(local_file_path)
@@ -262,6 +265,9 @@ for remote_file_path in all_files:
         delete_file(f"{remote_directory}/{file_name}")
         # Vérifier à nouveau si le fichier existe
         verify_file(remote_directory, file_name)
+    folder_path = 'runs'
+    if os.path.exists(folder_path) and os.path.isdir(folder_path):
+        shutil.rmtree(folder_path)
 
 
 
