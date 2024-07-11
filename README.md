@@ -20,11 +20,22 @@ Faite git clone :
   git clone https://github.com/calvinNdmb/Beeboop.git
 ```
 
-Installer le fichier requirements
+Installer le fichier requirements:
 
 ```python
   pip install -r requirements.txt
 ```
+
+❗Attention❗
+Installez ffmpeg avant de lancer le programme comme dans [cette video](https://youtu.be/5xgegeBL0kw?si=9IGn_WC2v2J2d5Eq)
+
+Sur un linux :
+
+```python
+pip3 install -r requirements.txt
+```
+Et regarder [lien utile](https://raspberrypi-guide.github.io/programming/install-opencv) si besoin
+
 
 
 ## 🧮 Pour lancer l'entrainement:
@@ -32,19 +43,19 @@ Installer le fichier requirements
 Le [Google colab](https://colab.research.google.com/drive/1hvyosE5pSRpjm5LHExdDigdmbghjksuc?usp=sharing) pour entraîner le model
 
 
-## 🌐 Liens Utiles
+## 💡Petit tips :
 
-📂 Création du Dataset [Documentation](https://universe.roboflow.com/mopi/beeboop-2)
-
-❓Comment régler l'erreur de position[Youtube](https://youtu.be/LNwODJXcvt4?si=bTVhICUVB16pZbIP&t=159)
-
-🐝 Dataset Kaggle [Documentation](https://www.kaggle.com/datasets/jerzydziewierz/bee-vs-wasp)
-
+- Le meilleur model est "Medium.pt" il est basé sur l'architecture [yoloV8m](https://docs.ultralytics.com/models/yolov8/) (m pour medium) --> temps d'entrainement 2H
+- Le second meilleur est "nano.pt" il est basé sur l'architecture [yoloV8n](https://docs.ultralytics.com/models/yolov8/) (n pour nano) --> temps d'entrainement :1H
+- Les utilities sont là pour vous aider à mieux comprendre le code en montrant des cas d'usage de certaines fonctions de notre projet.
+- Comment régler l'erreur de position des fichiers[Youtube](https://youtu.be/LNwODJXcvt4?si=bTVhICUVB16pZbIP&t=159) lors de l'entrainement?
 
 
+## 🌐 Liens Utiles:
 
-
-
+- 📂 Link to the dataset [Documentation](https://universe.roboflow.com/mopi/beeboop)
+- Kaggle de l'un des [datasets](https://www.kaggle.com/datasets/jerzydziewierz/bee-vs-wasp) utilisé pour les abeilles
+- Roboflow universe, pour retrouver les autres [datasets](https://universe.roboflow.com/) utilisés.
 
 ## Documentation
 
