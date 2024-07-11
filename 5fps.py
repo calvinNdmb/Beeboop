@@ -1,3 +1,6 @@
+#======================
+#That code shows you how you can use yolo to detect something in a predifined area 
+#======================
 import cv2
 from ultralytics import YOLO, solutions
 
