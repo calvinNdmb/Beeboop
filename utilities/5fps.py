@@ -1,11 +1,11 @@
 #======================
-#That code shows you how you can use yolo to detect something in a predifined area 
+#That code shows you how you can use yolo to detect something in a predifined area at 5fps to make it faster
 #======================
 import cv2
 from ultralytics import YOLO, solutions
 
-model = YOLO("models/lil_big_ai.pt")
-cap = cv2.VideoCapture("test_video_input/2024-07-04 22-22-47.mp4")
+model = YOLO("models/nano.pt")
+cap = cv2.VideoCapture("test_video_input/My Video.mp4")
 assert cap.isOpened(), "Error reading video file"
 w, h, fps = (int(cap.get(x)) for x in (cv2.CAP_PROP_FRAME_WIDTH, cv2.CAP_PROP_FRAME_HEIGHT, cv2.CAP_PROP_FPS))
 

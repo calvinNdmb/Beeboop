@@ -10,7 +10,7 @@ import ffmpeg
 ip_address = "51.159.106.237"
 username = "efrei1"
 password = "efrei2019"
-model = YOLO("models/lil_big_ai.pt")
+model = YOLO("models/nano.pt")
 
 # Fonction pour vérifier la présence d'un fichier
 def verify_file(remote_directory, file_name):

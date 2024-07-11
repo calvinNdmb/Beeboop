@@ -1,6 +1,6 @@
 import os
 import cv2
-
+#Usefule to flip images for data augmentation
 def flip_images(input_folder, output_folder):
     # Vérifier si le dossier de sortie existe, sinon le créer
     if not os.path.exists(output_folder):
